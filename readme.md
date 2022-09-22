@@ -39,4 +39,19 @@ Tujuan: sadap dua mahasiswa yang sus xixi
 3. kemudian follow tcp stream
 4. muncul percakapan mereka yang sussy
 ### Soal Nomor 9
+##### Cara Pengerjaan
+Tujuan: temukan file sussy
+1. terdapat hint dari percakapan sebelumnya (di nomor 8) bahwa terdapat salted file yang dikirim dari port 9002
+![image](https://user-images.githubusercontent.com/73109893/191798365-f314091f-7d49-48fa-b069-20275455c823.png)
+2. follow TCP stream tersebut kemudian download RAW file dari TCP stream tersebut (karena RAW file merupakan file dengan format aslinya makanya RAW == mentah)
+![image](https://user-images.githubusercontent.com/73109893/191798997-dd4d782c-fcd5-49e2-9194-048214c687a9.png)
+3. save, kemudian kita cek aj y kan tipe file ny, dan wow benar ini dia file yang di-encrypt yah (cek tipe file dgn komen linuk `file [nama file]`)
+![image](https://user-images.githubusercontent.com/73109893/191799224-a161db52-5dcb-46fe-9915-a17519b18fc0.png)
+4. rename jadi `D08.des3` (seperti yang diminta soal)
+![image](https://user-images.githubusercontent.com/73109893/191799406-f5faf5ed-09b7-4ca0-b088-190d600f798b.png)
+5. Decrypt file `.des3` dengan password *nakano* (keluarga nakano, marga si keluarga kembar lima. lagi-lagi wibu)
+![image](https://user-images.githubusercontent.com/73109893/191799567-a36c6173-b8bf-40b9-b7bc-a911e55ff4b8.png)
+6. File `D08.des3` decrypted
+![image](https://user-images.githubusercontent.com/73109893/191799854-3dcaa802-480a-4595-be89-c0297f0334ff.png)
+
 ### Soal Nomor 10
