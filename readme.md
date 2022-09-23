@@ -30,6 +30,20 @@ Tujuan: Mencari judul TA yang dibuka mas ishaq
 ### Soal Nomor 5
 ### Soal Nomor 6
 ### Soal Nomor 7
+##### Cara Pengerjaan
+Tujuan: Memfilter untuk mengambil paket yang berasal dari ip laptop
+1. Mengetahui ip kita sendiri
+
+![image](https://user-images.githubusercontent.com/90826711/191940577-d6cc699f-e143-4346-be31-fcbeec079fb8.png)
+
+2. Melakukan capture filter di wireshark dengan filter src host (isi dengan ip kita). Dalam kasus ini src host 192.168.164.57
+
+![image](https://user-images.githubusercontent.com/90826711/191940894-24124e0b-c85d-48dd-a911-604edb5d894d.png)
+
+3. Maka didapatkan hasil
+
+![image](https://user-images.githubusercontent.com/90826711/191941036-6c4baa9d-c9d8-41d5-b391-6926060df492.png)
+
 ### Soal Nomor 8
 ![image](https://user-images.githubusercontent.com/73109893/191796528-e0d76d10-b3da-44ed-b2c8-f3c64064d0a6.png)
 ##### Cara Pengerjaan
