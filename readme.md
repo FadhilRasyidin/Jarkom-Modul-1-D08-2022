@@ -15,6 +15,12 @@ Kendala:
 
 # Laporan Resmi
 ### Soal Nomor 1
+##### Cara Pengerjaan
+Tujuan: Mencari web server yang digunakan pada monta.if.its.ac.id
+1. Pilih salah satu paket yang berprotocol tcp lalu lakukan tcp stream maka akan didapatkan hasil nginx
+
+![Uploading image.png…]()
+
 ### Soal Nomor 2
 ![image](https://user-images.githubusercontent.com/73109893/191791803-4dd25f6e-195f-4a02-b0ac-d8f69c304033.png)
 ![image](https://user-images.githubusercontent.com/73109893/191792094-b23e5d24-6d17-4359-904d-064cb12e8581.png)
@@ -25,10 +31,53 @@ Tujuan: Mencari judul TA yang dibuka mas ishaq
 2. sesuai hint dalam soal terdapat web page yang mengandung "detail topik"
 3. telusuri webpage tersebut melalui wireshark kemudian buka melalui browser
 4. muncul webpage dan judul/topik ta
+
 ### Soal Nomor 3
+##### Cara Pengerjaan
+Tujuan: Memfilter untuk menampilikan paket yang menuju port 80
+1. Melakukan display filter dengan menggunakan tcp.dstport == 80
+
+![image](https://user-images.githubusercontent.com/90826711/191945121-1074a17d-9b9e-448a-bee4-8c670b8c47f9.png)
+
 ### Soal Nomor 4
+##### Cara Pengerjaan
+Tujuan: Memfilter untuk mengambil paket yang berasal dari port 21
+1. Melakukan capture filter dengan menggunakan udp src port 21 || tcp src port 21
+
+![image](https://user-images.githubusercontent.com/90826711/191944831-e150a0b0-c635-42bc-93f9-3b95326b4447.png)
+
+2. Melakukan display filter dengan menggunakan tcp.srcport == 21 || udp.srcport == 21
+
+![image](https://user-images.githubusercontent.com/90826711/191944768-6169e22b-e184-4707-85d3-15e3c20a23fb.png)
+
 ### Soal Nomor 5
+##### Cara Pengerjaan
+Tujuan: Memfilter untuk mengambil paket yang berasal dari port 443
+1. Melakukan capture filter dengan menggunakan tcp src port 443 || udp src port 443
+
+![image](https://user-images.githubusercontent.com/90826711/191945333-de68801f-e71e-4b6f-8ccd-701c5ba1ebba.png)
+
+2. Melakukan display filter dengan menggunakan tcp.srcport == 443 || udp.srcport == 443
+
+![image](https://user-images.githubusercontent.com/90826711/191944526-84098365-6e8e-4a3b-b76d-8d2cd580e284.png)
+
 ### Soal Nomor 6
+##### Cara Pengerjaan
+Tujuan: Memfilter untuk menampilkan paket yang menuju ke lipi.go.ig
+Cara pertama:
+1. Menggunakan display filter http.host == "lipi.go.id". Maka didapatkan hasil
+
+![image](https://user-images.githubusercontent.com/90826711/191941956-bdee7090-3c35-46d8-8564-71658b6f2d79.png)
+
+Cara kedua:
+1. Mendapatkan ip yang digunakan lipi.go.id terlebih dahulu menggunakan ping
+
+![image](https://user-images.githubusercontent.com/90826711/191942237-5935e5d5-b305-406c-9606-942e6db6ba47.png)
+
+2. Ip yang didapatkan ini kemudian digunakan sebagai display filter. Dalam kasus ini ip.dst == 203.160.128.158
+
+![image](https://user-images.githubusercontent.com/90826711/191942522-9f1b1ee2-4546-4310-837a-f5fc8fbfa039.png)
+
 ### Soal Nomor 7
 ##### Cara Pengerjaan
 Tujuan: Memfilter untuk mengambil paket yang berasal dari ip laptop
