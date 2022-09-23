@@ -44,7 +44,7 @@ Tujuan: Memfilter untuk menampilikan paket yang menuju port 80
 Tujuan: Memfilter untuk mengambil paket yang berasal dari port 21
 1. Melakukan capture filter dengan menggunakan udp src port 21 || tcp src port 21
 
-![image](https://user-images.githubusercontent.com/90826711/191944831-e150a0b0-c635-42bc-93f9-3b95326b4447.png)
+![image](https://user-images.githubusercontent.com/90826711/191950410-cf039c32-ba63-4d0f-bbb0-3a7255fda8f4.png)
 
 2. Melakukan display filter dengan menggunakan tcp.srcport == 21 || udp.srcport == 21
 
@@ -55,7 +55,7 @@ Tujuan: Memfilter untuk mengambil paket yang berasal dari port 21
 Tujuan: Memfilter untuk mengambil paket yang berasal dari port 443
 1. Melakukan capture filter dengan menggunakan tcp src port 443 || udp src port 443
 
-![image](https://user-images.githubusercontent.com/90826711/191945333-de68801f-e71e-4b6f-8ccd-701c5ba1ebba.png)
+![image](https://user-images.githubusercontent.com/90826711/191950330-43308e41-fc9b-4c5f-95d4-de1225bdb7bc.png)
 
 2. Melakukan display filter dengan menggunakan tcp.srcport == 443 || udp.srcport == 443
 
