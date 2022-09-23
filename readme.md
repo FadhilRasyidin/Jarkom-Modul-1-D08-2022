@@ -19,7 +19,7 @@ Kendala:
 Tujuan: Mencari web server yang digunakan pada monta.if.its.ac.id
 1. Pilih salah satu paket yang berprotocol tcp lalu lakukan tcp stream maka akan didapatkan hasil nginx
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/90826711/191946093-57286cd9-65c9-4063-899c-3677d974d7ec.png)
 
 ### Soal Nomor 2
 ![image](https://user-images.githubusercontent.com/73109893/191791803-4dd25f6e-195f-4a02-b0ac-d8f69c304033.png)
